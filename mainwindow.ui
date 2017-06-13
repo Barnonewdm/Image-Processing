@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1267</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QVTKWidget" name="qvtkWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>10</y>
+      <width>361</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKWidget" name="qvtkWidget_1">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>10</y>
+      <width>361</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKWidget" name="qvtkWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>320</y>
+      <width>361</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKWidget" name="qvtkWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>320</y>
+      <width>361</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>451</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;test&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="project1_tab">
+     <attribute name="title">
+      <string>Project 1</string>
+     </attribute>
+     <widget class="QPushButton" name="HistogramButton">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>110</y>
+        <width>171</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Histogram</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ThresholdingButton">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>220</y>
+        <width>171</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Thresholding</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="project2_tab">
+     <attribute name="title">
+      <string>Project 2</string>
+     </attribute>
+     <widget class="QPushButton" name="SobelButton">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Sobel</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="EdgeDectectionButton">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>140</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Edge Detection</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="NoiseReductionButton">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>250</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Noise Reduction</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="project3_tab">
+     <attribute name="title">
+      <string>Project3</string>
+     </attribute>
+     <widget class="QPushButton" name="DilationpushButton">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 36pt &quot;Sans Serif&quot;;
+font: 14pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Binary Dilation</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ErosionpushButton">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Binary Erosion</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="OpenpushButton">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>230</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Binary Opening</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ClosingpushButton">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>300</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Binary Closing</string>
+      </property>
+     </widget>
+     <zorder>ErosionpushButton</zorder>
+     <zorder>OpenpushButton</zorder>
+     <zorder>ClosingpushButton</zorder>
+     <zorder>DilationpushButton</zorder>
+    </widget>
+    <widget class="QWidget" name="project4_tab">
+     <attribute name="title">
+      <string>Project4</string>
+     </attribute>
+     <widget class="QPushButton" name="MorphologicalDistancepushButton">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>271</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Morphological Distance Transform</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="MorphologicalSkeletonpushButton">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>180</y>
+        <width>271</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Morphological Skeleton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="MorphologicalSkeletonRestorationpushButton">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>270</y>
+        <width>271</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Morphological Skeletion Restoration</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="project5_tab">
+     <attribute name="title">
+      <string>Project5</string>
+     </attribute>
+     <widget class="QPushButton" name="DilationGraypushButton">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>60</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Grayscale Dilation</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ErosionGraypushButton">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>140</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Grayscale Erosion</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="OpenGraypushButton">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>220</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Grayscale Opening</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CloseGraypushButton">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>300</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Grayscale Closing</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="project6_tab">
+     <attribute name="title">
+      <string>Project6</string>
+     </attribute>
+     <widget class="QPushButton" name="MorphEdgeDetectionpushButton">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Morphological Edge Detection</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="MorphReconstructionpushButton">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>170</y>
+        <width>241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Morphological Reconstruction</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="MorphGradientpushButton">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>274</y>
+        <width>241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Morphological Gradient</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QSlider" name="thresholdingSlider">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>580</y>
+      <width>361</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="radiusSlider">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>580</y>
+      <width>361</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1267</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionOpen_image"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen_image">
+   <property name="text">
+    <string>open image</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKWidget</class>
+   <extends>QWidget</extends>
+   <header>QVTKWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
